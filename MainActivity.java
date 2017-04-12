@@ -1,5 +1,6 @@
 package com.iflytek.walson.iflytektestdemo;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -62,5 +64,8 @@ public class MainActivity extends AppCompatActivity {
     // Used to load the 'native-lib' library on application startup.
     static {
         System.loadLibrary("native-lib");
+    }
+    public static void showToast(Context context, String content) {
+        Toast.makeText(context, content, Toast.LENGTH_LONG).show();
     }
 }
