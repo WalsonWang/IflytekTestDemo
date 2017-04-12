@@ -73,4 +73,8 @@ public class MainActivity extends AppCompatActivity {
     public static void showToastshort(Context context, String content) {
         Toast.makeText(context, content, Toast.LENGTH_SHORT).show();
     }
+
+    public static void showToastSpecific(Context context, String content, int showTime) {
+        Toast.makeText(context, content, showTime).show();
+    }
 }
