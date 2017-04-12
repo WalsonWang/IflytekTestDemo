@@ -65,7 +65,12 @@ public class MainActivity extends AppCompatActivity {
     static {
         System.loadLibrary("native-lib");
     }
+
     public static void showToast(Context context, String content) {
         Toast.makeText(context, content, Toast.LENGTH_LONG).show();
+    }
+
+    public static void showToastshort(Context context, String content) {
+        Toast.makeText(context, content, Toast.LENGTH_SHORT).show();
     }
 }
